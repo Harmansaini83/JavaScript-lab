@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title> JS 1st Practical </title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <!--internal js-->
+        <script>
+            function showWelcome() {
+
+                //getting values
+                let name = document.getElementById("name").value;
+                let age = document.getElementById("age").value;
+
+                //display welcome msg
+
+        document.getElementById("output").innerHTML =
+                "<h2>Welcome, " + name + "!</h2>" +
+                "<p>Your Age is:" + age + "</p>";
+
+
+                //console methods
+                console.log("User Name: " + name);
+                console.log("User Age: " + age);
+                console.warn("This is a warning message.");
+                console.error("This is an error message (Demo purpose).");
+            }
+
+        </script>
+    </head>
+
+
+    <body>
+
+        <h1>User Information</h1>
+    
+        <label>Enter Name:</label><br>
+        <input type="text" id="name" placeholder="Enter Name"><br><br>
+
+        <label>Enter Age:</label><br>
+        <input type="text" id="age" placeholder="Enter Age"><br><br>
+        
+        <!--inline js-->
+        <button onclick="showWelcome(); greet();">
+             Submit
+        </button>
+
+        <hr>
+        <div id="output"></div>
+
+    <!--external js-->
+
+    <script src="script.js"></script>
+
+    </body>
+</html>
