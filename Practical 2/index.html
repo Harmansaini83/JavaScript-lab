@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Fashion Hub</h1>
+
+    <label>Customer Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label>Select Products</label>
+
+    <div class="products">
+        <input type="checkbox" id="shirt"> Shirt - ₹800 <br>
+        <input type="checkbox" id="jeans"> Jeans - ₹1200 <br>
+        <input type="checkbox" id="shoes"> Shoes - ₹2500 <br>
+        <input type="checkbox" id="watch"> Watch - ₹1800 <br>
+        <input type="checkbox" id="cap"> Cap - ₹600 <br>
+        <input type="checkbox" id="bag"> Bag - ₹900 <br>
+        <input type="checkbox" id="belt"> Belt - ₹400
+    </div>
+
+    <label>Quantity</label>
+    <input type="number" id="quantity" value="1" min="1">
+
+    <button onclick="calculateBill()">Generate Bill</button>
+
+    <div id="bill"></div>
+
+    <hr>
+
+    <p class="designer">
+        Designed by <b>Harman Saini</b><br>
+        (24070521056)
+    </p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
